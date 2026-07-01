@@ -135,7 +135,7 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 /* Main Content (Right of Sidebar, below Header) */
 .main-container {
     background-color: transparent !important;
-    border-radius: none !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
 
     overflow-y: auto;
@@ -144,7 +144,7 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
     width: auto;
 
     display: grid;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: 40px repeat(3, 100px);
     grid-template-columns: 2fr 1fr;
     gap: 20px;
 }
@@ -155,18 +155,33 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
     border-radius: 15px;
 }
 
-.volume-goal {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-} 
-.merchant-status {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+.main-selectors {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.dropbtn {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: #f4f7fc;
+}
+.date-selector {
+    height: 100%;
+    width: 50%;
+}
+.merchant-selector {
+    height: 100%;
+    width: 40%;
 }
 
 .transaction-count {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -183,4 +198,12 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
     width: auto;
 }
 
-.transimg .approved {background: rgba(91, 201, 128, 0.15);}
+.merchant-status {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.volume-goal {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
