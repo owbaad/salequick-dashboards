@@ -14,14 +14,14 @@
 
             <div class="header-left">
                 <div class="logo-container">
-                    <img class="header-logo" src="images/salequick-logo.png">
+                    <img class="header-logo" src="images/header/salequick-logo.png">
                 </div>
                 
                 <div class="header-title">Company Overview</div>
             </div>
 
             <div class="profile-container">
-                <img class="pfp" src="images/profile.png">
+                <img class="pfp" src="images/header/profile.png">
                 <p class="name">Owen Baadsgaard</p>
             </div>
 
@@ -29,28 +29,28 @@
 
         <div class="sidebar-container">
             <div class="sb-top">
-                <img class="sb-collapse" src="images/sidebar-collapse.png">
+                <img class="sb-collapse" src="images/sidebar/sidebar-collapse.png">
             </div>
 
             <ul class="sb-body">
                 <li>
-                    <img class="sb-image" src="images/dashboard.png">
+                    <img class="sb-image" src="images/sidebar/dashboard.png">
                     <p class="sb-title">Dashboard</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/merchant_icon.png">
+                    <img class="sb-image" src="images/sidebar/merchant_icon.png">
                     <p class="sb-title">Merchants</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/payment_icon.png">
+                    <img class="sb-image" src="images/sidebar/payment_icon.png">
                     <p class="sb-title">Payments</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/reseller_icon.png">
+                    <img class="sb-image" src="images/sidebar/reseller_icon.png">
                     <p class="sb-title">Partners</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/marketing-icon.png">
+                    <img class="sb-image" src="images/sidebar/marketing-icon.png">
                     <p class="sb-title">Marketing</p>
                 </li>
             </ul>
@@ -62,7 +62,50 @@
         </div>
 
         <div class="main-container">
+            <!-- Selectors need to go here. Applies to all elements in main-container -->
+
+            <div class="volume-goal">
+            </div>
+
+            <div class="merchant-status">
+            </div>
+
+            <div class="transaction-count">
+                <div class="approved">
+                    <img class="transimg approved" src="images/main-transaction/approved.png">
+                    <div class="approved-stats">
+                        <h1 class="approved count">114,823</h1>
+                        <p class="approved header">Total Approved</p>
+                    </div>
+                </div>
+
+                <div class="pending">
+                    <img class="transimg pending" src="images/main-transaction/pending.png">
+                    <div class="pending-stats">
+                        <h1 class="pending count">652</h1>
+                        <p class="pending header">Total Pending</p>
+                    </div>
+                </div>
+
+                <div class="completed">
+                    <img class="transimg completed" src="images/main-transaction/completed.png">
+                    <div class="completed-stats">
+                        <h1 class="completed count">0</h1>
+                        <p class="completed header">Total Completed</p>
+                    </div>
+                </div>
+
+                <div class="failed">
+                    <img class="transimg failed" src="images/main-transaction/failed.png">
+                    <div class="failed-stats">
+                        <h1 class="failed count">1,518</h1>
+                        <p class="failed header">Total Failed</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
     
 </body>

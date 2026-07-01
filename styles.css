@@ -10,9 +10,11 @@
     font-size: 14px;
 }
 
-body {
+html, body {
     background-color: #f4f7fc;
     padding: 25px;
+    overflow: hidden;
+    height: 100vh;
 }
 
 ul {list-style-type: none;}
@@ -24,6 +26,7 @@ ul {list-style-type: none;}
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr 8fr;
     gap: 30px 40px;
+    height: 100vh;
 }
 .dashboard-container > div {
     background-color: white;
@@ -131,6 +134,53 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 
 /* Main Content (Right of Sidebar, below Header) */
 .main-container {
+    background-color: transparent !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+
+    overflow-y: auto;
+    min-height: 0;
     grid-column: 2 / 3;
     width: auto;
+
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
+
+.main-container > div {
+    background-color: white;
+    box-shadow: 0 0 0 0 rgba(111, 134, 230, 0.13), 0 4px 16px 0 rgba(179, 187, 195, 0.26);
+    border-radius: 15px;
+}
+
+.volume-goal {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+} 
+.merchant-status {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.transaction-count {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.transaction-count > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.transimg {
+    height: 100%;
+    width: auto;
+}
+
+.transimg .approved {background: rgba(91, 201, 128, 0.15);}
