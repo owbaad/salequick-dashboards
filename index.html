@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Admin | Overview</title>
+    <title>Admin | Company Overview</title>
 </head>
 
 <body>
@@ -62,53 +62,50 @@
         </div>
 
         <div class="main-container">
-
-            <div class="main-selectors">
-                <button class="dropbtn date-selector">This Month ▼</button>
-                <button class="dropbtn merchant-selector">All Merchants ▼</button>
-            </div>
-
-            <div class="transaction-count">
-                <div class="approved">
-                    <img class="transimg approved" src="images/main-transaction/approved.png">
-                    <div class="approved stats">
-                        <h1 class="approved count">114,823</h1>
-                        <p class="approved header">Total Approved</p>
-                    </div>
+            <!-- Proc: 5 Column, 5 Row -->
+             <div class="processing-container">
+                <div class="processing volume">
+                    <h2 class="main-title">Total Volume</h2>
+                    <h1 class="main-header">$17.28M</h1>
+                    <h2 class="main-title">6% from Goal</h2>
                 </div>
-
-                <div class="pending">
-                    <img class="transimg pending" src="images/main-transaction/pending.png">
-                    <div class="pending stats">
-                        <h1 class="pending count">652</h1>
-                        <p class="pending header">Total Pending</p>
-                    </div>
+                <div class="processing revenue">
+                    <h2 class="main-title">Net Revenue</h2>
+                    <h1 class="main-header">$412.23K</h1>
+                    <h2 class="main-title">Up 6.2% from LM</h2>
                 </div>
-
-                <div class="completed">
-                    <img class="transimg completed" src="images/main-transaction/completed.png">
-                    <div class="completed stats">
-                        <h1 class="completed count">0</h1>
-                        <p class="completed header">Total Completed</p>
-                    </div>
+                <div class="processing merchants">
+                    <h2 class="main-title">Active Merchants</h2>
+                    <h1 class="main-header">2,184</h1>
+                    <h2 class="main-title">Up 34</h2>
                 </div>
-
-                <div class="failed">
-                    <img class="transimg failed" src="images/main-transaction/failed.png">
-                    <div class="failed stats">
-                        <h1 class="failed count">1,518</h1>
-                        <p class="failed header">Total Failed</p>
-                    </div>
+                <div class="processing auth">
+                    <h2 class="main-title">Auth Rate</h2>
+                    <h1 class="main-header">94.3%</h1>
+                    <h2 class="main-title">Down 0.2% from LM</h2>
                 </div>
-            </div>
+                <div class="processing chargebacks">
+                    <h2 class="main-title">Chargeback Rate</h2>
+                    <h1 class="main-header">0.12%</h1>
+                    <h2 class="main-title">Under 1% Threshold</h2>
+                </div>          
+            </div>      
+
+
 
             <div class="volume-goal">
             </div>
 
-            <div class="merchant-status">
+            <div class="volume-daily">
             </div>
 
-        </div>
+            <div class="transactions">
+            </div>
+
+            <div class="merchants">
+            </div>
+
+        </div> 
 
     </div>
     
