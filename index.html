@@ -95,8 +95,8 @@
                         <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
                     </div>
                     <div class="kpi-body">
-                        <h2 class="kpi-label">Active Merchants</h2>
-                        <h1 class="kpi-value">2,184</h1>
+                        <h2 class="kpi-label">Total Merchants</h2>
+                        <h1 class="kpi-value">3,793</h1>
                         <h2 class="kpi-delta">Up 34</h2>
                     </div>
                 </div>
@@ -129,14 +129,12 @@
             <div class="main-goal card">
                 <div class="goal-header">
                     <h1 class="goal-title">Volume Goal Progress</h1>
-                    <h2 class="goal-item">$11.39M / $16.00M</h2>
+                    <h2 class="goal-subtitle">$11.39M / $16.00M</h2>
                 </div>
 
                 <div class="goal-progress" style="--fill: 71.2%">
                     <div class="progress-total">
-                        <div class="progress-bar">
-                            <span class="progress-marker">71.2%</span>
-                        </div>
+                        <div class="progress-bar"> <span class="progress-marker">71.2%</span> </div>
                     </div>
                 </div>
 
@@ -158,9 +156,91 @@
                 </div>
             </div> <!-- Close main-goal -->
 
-            <!-- Graph of Volume depending on date interval, comp to LY -->
+
+            <!-- Graph of volume depending on date interval, comp to LY -->
             <div class="main-volume card">
+                <div class="volume-header">
+                    <h1 class="volume-title">Volume Comparison</h1>
+                    <div class="volume-legend">
+                        <span><i class="legend-current"></i>Current Year</span>
+                        <span><i class="legend-last"></i>Last Year</span>
+                    </div>
+                </div>
+
+                <div class="volume-chart">
+                    <svg class="chart-line">
+                        <polyline class="line-graph">
+                    </svg>
+
+                    <div class="chart-x">
+                        <span>Jun 1</span>
+                        <span>Jun 2</span>
+                        <span>Jun 3</span>
+                        <span>Jun 4</span>
+                        <span>Jun 5</span>
+                        <span>Jun 6</span>
+                        <span>Jun 7</span>
+                        <span>Jun 8</span>
+                        <span>Jun 9</span>
+                        <span>Jun 10</span>
+                        <span>Jun 11</span>
+                        <span>Jun 12</span>
+                        <span>Jun 13</span>
+                        <span>Jun 14</span>
+                        <span>Jun 15</span>
+                        <span>Jun 16</span>
+                        <span>Jun 17</span>
+                        <span>Jun 18</span>
+                        <span>Jun 19</span>
+                        <span>Jun 20</span>
+                        <span>Jun 21</span>
+                        <span>Jun 22</span>
+                        <span>Jun 23</span>
+                        <span>Jun 24</span>
+                    </div>
+                </div>
             </div> <!-- Close main-daily  -->
+
+
+            <!-- Transaction counts and amounts by status -->
+            <div class="main-transactions card">
+                <h1 class="transactions-title">Transactions</h1>
+            </div> <!-- Close main-transactions  -->
+
+
+            <!-- Amount (and percentage) of payment sources -->
+            <div class="main-sources card">
+                <h1 class="sources-title">Payment Methods</h1>
+            </div> <!-- Close main-sources -->
+
+
+            <!-- Merchants, counts by status (in system) (?) and funnel (sales) -->
+             <div class="main-merchants card">
+                <h1 class="merchants-title">Merchant Analytics</h1>
+
+                <div class="merchants-status">
+                    <div class="status status-leads">
+                        <h2 class="status-label">Leads</h2>
+                        <h1 class="status-value">1,283</h1>
+                    </div>
+
+                    <div class="status status-qualified">
+                        <h2 class="status-label">Qualified</h2>
+                        <h1 class="status-value">275</h1>
+                    </div>
+
+                    <div class="status status-underwriting">
+                        <h2 class="status-label">In Underwriting</h2>
+                        <h1 class="status-value">31</h1>
+                    </div>
+
+                    <div class="status status-approved">
+                        <h2 class="status-label">Approved</h2>
+                        <h1 class="status-value">23</h1>
+                    </div>
+                </div>
+             </div> <!-- Close main-merchants -->
+
 
         </main> <!-- Close main -->
     </div> <!-- Close dashboard-container --> 

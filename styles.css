@@ -32,7 +32,7 @@ ul {list-style-type: none;}
 
 html, body {
     background-color: var(--background-color);
-    padding: clamp(12px, 3vw, 25px);
+    padding: clamp(2px, 3vw, 10px);
     overflow: hidden;
     height: 100vh;
 }
@@ -167,7 +167,7 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
     width: auto;
 
     display: grid;
-    grid-template: auto repeat(2, 2fr) 1fr / repeat(5, 1fr);
+    grid-template: auto repeat(3, 2fr) / repeat(5, 1fr);
     gap: 15px;
 }
 
@@ -227,7 +227,7 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 
 /* --- .main-goal, volume progress bar --- */
 .main-goal {
-    grid-column: 1 / -1;
+    grid-column: 1 / 4;
     grid-row: 2 / 3;
     padding: 30px;
 
@@ -243,7 +243,7 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 }
 
 .goal-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
-.volume-item { font-size: var(--fs-text); font-weight: var(--fw-medium); }
+.goal-subtitle { font-size: var(--fs-text); font-weight: var(--fw-medium); }
 
 
 .goal-progress {
@@ -288,3 +288,105 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 
 
 /* -- .main-volume, graph for daily volume -- */
+.main-volume {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.volume-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.volume-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+.volume-legend { 
+    font-size: var(--fs-text); 
+    font-weight: var(--fw-light); 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.legend-current, 
+.legend-last {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.legend-current { background: var(--primary-blue); }
+.legend-last { background: var(--primary-lightblue); }
+
+
+.volume-chart {
+    border: 1px solid gray;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/* -- .main-transactions, counts of payment status */
+.main-transactions {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    padding: 30px;
+}
+
+.transactions-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+
+
+/* -- .main-sources, graph by payment source */
+.main-sources { 
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+    padding: 30px;
+}
+
+.sources-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+
+
+/* -- .main-merchants, funnel and counts(?) */
+.main-merchants {
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.merchants-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+
+.merchants-status {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+}
+
+.status-label { color: var(--primary-white); font-size: var(--fs-text); font-weight: var(--fw-light); }
+.status-value { color: var(--primary-white); font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+.status {
+    padding: 15px;
+    background-color: var(--primary-lightblue);
+    border-radius: 10px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
