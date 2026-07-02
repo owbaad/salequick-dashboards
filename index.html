@@ -10,181 +10,161 @@
 <body>
 
     <div class="dashboard-container">
-        <div class="header-container">
 
-            <div class="header-left">
-                <div class="logo-container">
-                    <img class="header-logo" src="images/header/salequick-logo.png">
+        <!-- Header Elements -->
+        <header class="header card">
+            <div class="header-brand">
+                <div class="header-logo">
+                    <img class="header-logo-img" src="images/header/salequick-logo.png" alt="SaleQuick">
                 </div>
-                
-                <div class="header-title">Company Overview</div>
+                <h1 class="header-title">Company Overview</h1>
             </div>
 
-            <div class="profile-container">
-                <img class="pfp" src="images/header/profile.png">
-                <p class="name">Owen Baadsgaard</p>
+            <div class="header-profile">
+                <img class="header-avatar" src="images/header/profile.png" alt="">
+                <p class="header-name">Owen Baadsgaard</p>
+            </div>
+        </header>
+
+
+        <!-- Navigation Elements -->
+        <nav class="nav card">
+            <div class="nav-collapse">
+                <img class="nav-collapse-img" src="images/sidebar/sidebar-collapse.png" alt="Collapse Navigation">
             </div>
 
-        </div>
-
-        <div class="sidebar-container">
-            <div class="sb-top">
-                <img class="sb-collapse" src="images/sidebar/sidebar-collapse.png">
-            </div>
-
-            <ul class="sb-body">
+            <ul class="nav-body">
                 <li>
-                    <img class="sb-image" src="images/sidebar/dashboard.png">
-                    <p class="sb-title">Dashboard</p>
+                    <img class="nav-icon" src="images/sidebar/dashboard.png" alt="">
+                    <p class="nav-title">Dashboard</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/sidebar/merchant_icon.png">
-                    <p class="sb-title">Merchants</p>
+                    <img class="nav-icon" src="images/sidebar/merchants_icon.png" alt="">
+                    <p class="nav-title">Merchants</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/sidebar/payment_icon.png">
-                    <p class="sb-title">Payments</p>
+                    <img class="nav-icon" src="images/sidebar/payments_icon.png" alt="">
+                    <p class="nav-title">Payments</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/sidebar/reseller_icon.png">
-                    <p class="sb-title">Partners</p>
+                    <img class="nav-icon" src="images/sidebar/partners_icon.png" alt="">
+                    <p class="nav-title">Partners</p>
                 </li>
                 <li>
-                    <img class="sb-image" src="images/sidebar/marketing-icon.png">
-                    <p class="sb-title">Marketing</p>
+                    <img class="nav-icon" src="images/sidebar/marketing-icon.png" alt="">
+                    <p class="nav-title">Marketing</p>
                 </li>
             </ul>
 
-            <div class="sb-bottom">
-                <p class="powered">Powered By:</p>
-                <p class="milstead">Milstead Technologies, LLC</p>
+            <div class="nav-bottom">
+                <p class="nav-powered">Powered By:</p>
+                <p class="nav-company">Milstead Technologies, LLC</p>
             </div>
-        </div>
+        </nav>
 
-        <div class="main-container">
-            <!-- Proc: 5 Column, 5 Row -->
-             <div class="processing-container">
-                <div class="processing volume">
-                    <div class="processing-img-container volume img">
-                        <img class="volume-img" src="images/main-processing/save-money.png">
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Primary KPIs, top row / full column span -->
+             <div class="main-kpi card">
+                <div class="kpi kpi-volume">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/save-money.png" alt="">
                     </div>
-                    <div class="volume text">
-                        <h2 class="main-title">Total Volume</h2>
-                        <h1 class="main-header">$17.28M</h1>
-                        <h2 class="main-title">6% from Goal</h2>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Total Volume</h2>
+                        <h1 class="kpi-value">$11.39M</h1>
+                        <h2 class="kpi-delta">28.8% from Goal</h2>
                     </div>
                 </div>
 
-                <div class="processing revenue">
-                    <div class="processing-img-container revenue img">
-                        <img class="revenue-img" src="images/main-processing/revenue.png">
+                <div class="kpi kpi-revenue">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/revenue.png" alt="">
                     </div>
-                    <div class="revenue text">
-                        <h2 class="main-title">Net Revenue</h2>
-                        <h1 class="main-header">$412.23K</h1>
-                        <h2 class="main-title">Up 6.2% from LM</h2>
-                    </div>
-                </div>
-
-                <div class="processing processing-merchants">
-                    <div class="processing-img-container processing-merchants img">
-                        <img class="merchant-img" src="images/main-processing/group.png">
-                    </div>
-                    <div class="processing-merchants text">
-                        <h2 class="main-title">Active Merchants</h2>
-                        <h1 class="main-header">2,184</h1>
-                        <h2 class="main-title">Up 34</h2>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Net Revenue</h2>
+                        <h1 class="kpi-value">$412.23K</h1>
+                        <h2 class="kpi-delta">Up 6.2% from LM</h2>
                     </div>
                 </div>
 
-                <div class="processing auth">
-                    <div class="processing-img-container auth img">
-                        <img class="auth-img" src="images/main-processing/discount.png">
+                <div class="kpi kpi-merchants">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
                     </div>
-                    <div class="auth text">
-                        <h2 class="main-title">Auth Rate</h2>
-                        <h1 class="main-header">94.3%</h1>
-                        <h2 class="main-title">Down 0.2% from LM</h2>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Active Merchants</h2>
+                        <h1 class="kpi-value">2,184</h1>
+                        <h2 class="kpi-delta">Up 34</h2>
                     </div>
                 </div>
 
-                <div class="processing chargebacks">
-                    <div class="processing-img-container chargebacks img">
-                        <img class="chargebacks-img" src="images/main-processing/alert.png">
+                <div class="kpi kpi-auth">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/discount.png" alt="">
                     </div>
-                    <div class="chargebacks text">
-                        <h2 class="main-title">Chargeback Rate</h2>
-                        <h1 class="main-header">0.12%</h1>
-                        <h2 class="main-title">Under 1% Threshold</h2>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Auth Rate</h2>
+                        <h1 class="kpi-value">98.7%</h1>
+                        <h2 class="kpi-delta">Down 0.01% from LM</h2>
+                    </div>
+                </div>
+
+                <div class="kpi kpi-chargebacks">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/alert.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Chargeback Rate</h2>
+                        <h1 class="kpi-value"> < 0.1%</h1>
+                        <h2 class="kpi-delta">Under Threshold</h2>
                     </div>
                 </div>          
-            </div>      
+            </div> <!-- Close main-kpi -->
 
 
-
-            <div class="volume-goal">
-                <div class="volume-header">
-                    <h1 class="main-header">Volume Goal Progress</h1>
-                    <h2 class="primary-header">$17.28M / $20.00M</h2>
+            <!-- Volume Progress Bar, second row / full column span -->
+            <div class="main-goal card">
+                <div class="goal-header">
+                    <h1 class="goal-title">Volume Goal Progress</h1>
+                    <h2 class="goal-item">$11.39M / $16.00M</h2>
                 </div>
 
-                <div class="goal-progress">
-                    <div class="progress-bar">
-                        <div></div>
-                    </div>
-
-                    <div class="progress-statistics">
-                        <div class="progress-actual">
-                            <h2 class="primary-header">81.2% Actual</h2>
-                        </div>
-
-                        <div class="progress-pace">
-                            <h2 class="primary-header">83.0% Pace (Day 24/30)</h2>
-                        </div>
-                        
-                        <div class="progress-end">
-                            <h2 class="primary-header">100%</h2>
+                <div class="goal-progress" style="--fill: 71.2%">
+                    <div class="progress-total">
+                        <div class="progress-bar">
+                            <span class="progress-marker">71.2%</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="goal-statistics">
-                    <div class="goal-average">
-                        <h2 class="primary-header">Average per Day</h2>
-                        <h1 class="primary-item">$532.65K</h1>
+                <div class="goal-stats">
+                    <div class="stats-average">
+                        <h2 class="stats-label">Average per Day</h2>
+                        <h1 class="stats-value">$474.58K</h1>
                     </div>
 
-                    <div class="goal-projected">
-                        <h2 class="primary-header">Projected at End</h2>
-                        <h1 class="primary-item">$21.43M</h1>
+                    <div class="stats-projected">
+                        <h2 class="stats-label">Projected at End</h2>
+                        <h1 class="stats-value">$14.57M</h1>
                     </div>
                     
-                    <div class="goal-projected-goal">
-                        <h2 class="primary-header">Projected vs. Goal</h2>
-                        <h1 class="primary-item">106.3% - Ahead</h1>
+                    <div class="stats-comparison">
+                        <h2 class="stats-label">Projected vs. Goal</h2>
+                        <h1 class="stats-value">89.0% - Behind</h1>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Close main-goal -->
 
+            <!-- Graph of Volume depending on date interval, comp to LY -->
+            <div class="main-volume card">
+            </div> <!-- Close main-daily  -->
 
+        </main> <!-- Close main -->
+    </div> <!-- Close dashboard-container --> 
 
-            <div class="volume-daily">
-            </div>
-
-
-
-            <div class="transactions">
-            </div>
-
-
-            
-            <div class="merchants">
-            </div>
-
-        </div> 
-
-    </div>
-    
 </body>
 
 </html>
