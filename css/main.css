@@ -11,6 +11,12 @@ ul { list-style-type: none; }
     --primary-lightblue: #55d2ff;
     --primary-gray: #3E3E3E;
 
+    --dark-blue: #20358E;
+    --blue: #0B9BCf;
+    --green: #5BC980;
+    --yellow: #EEBF04;
+    --red: #DA2637;
+
     --fs-heading: 24px;
     --fs-subheading: 20px;
     --fs-text: 16px;
@@ -80,7 +86,7 @@ html, body {
 .header-title {
     font-size: var(--fs-heading);
     font-weight: var(--fw-medium);
-    color: var(--primary-blue);
+    color: var(--dark-blue);
 }
 
 .header-logo {
