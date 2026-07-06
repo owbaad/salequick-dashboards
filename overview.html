@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet" href="css/overview.css">
     <title>Admin | Company Overview</title>
 </head>
@@ -67,8 +68,10 @@
         <!-- Main Content -->
         <main class="main">
 
-            <!-- Primary KPIs, top row / full column span -->
+            <!-- Primary KPIs; This data should be in the SQ database already -->
              <div class="main-kpi card">
+
+                <!-- Total Volume; Self-Explanatory -->
                 <div class="kpi kpi-volume">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -79,6 +82,7 @@
                     </div>
                 </div>
 
+                <!-- Total Revenue; this is FEES charged -->
                 <div class="kpi kpi-revenue">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/revenue.png" alt="">
@@ -89,6 +93,7 @@
                     </div>
                 </div>
 
+                <!-- Merchant Count; Not any specific status just a total of all merchants -->
                 <div class="kpi kpi-merchants">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
@@ -99,6 +104,7 @@
                     </div>
                 </div>
 
+                <!-- Authorization Rate; this is Approved Transactions divided by Total Attempted Transactions -->
                 <div class="kpi kpi-auth">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/discount.png" alt="">
@@ -109,6 +115,7 @@
                     </div>
                 </div>
 
+                <!-- Chargeback Rate; this is Total Chargeback (Count) divided by Total Transactions -->
                 <div class="kpi kpi-chargebacks">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/alert.png" alt="">
@@ -121,7 +128,7 @@
             </div> <!-- Close main-kpi -->
 
 
-            <!-- Volume Progress Bar, second row / full column span -->
+            <!-- Volume Progress Bar; this is Current Volume vs. the Monthly Goal for Volume -->
             <div class="main-goal card">
                 <div class="goal-header">
                     <h1 class="goal-title">Volume Goal Progress</h1>
@@ -134,17 +141,21 @@
                     </div>
                 </div>
 
+                <!-- Statistics related to the Volume Goal -->
                 <div class="goal-stats">
+                    <!-- Average Volume per Day; Self-Explanatory -->
                     <div class="stats-average">
                         <h2 class="stats-label">Average per Day</h2>
                         <h1 class="stats-value">$474.58K</h1>
                     </div>
 
+                    <!-- Projected Volume at End; Based on the Average Volume per Day -->
                     <div class="stats-projected">
                         <h2 class="stats-label">Projected at End</h2>
                         <h1 class="stats-value">$14.57M</h1>
                     </div>
                     
+                    <!-- Percantage Projected; What % of goal we're expected to reach out of the goal  -->
                     <div class="stats-comparison">
                         <h2 class="stats-label">Projected vs. Goal</h2>
                         <h1 class="stats-value">89.0% - Behind</h1>
@@ -153,7 +164,8 @@
             </div> <!-- Close main-goal -->
 
 
-            <!-- Graph of volume depending on date interval, comp to LY -->
+            <!-- Volume Chart; This is a combination of the Dashboard's existing Sales Chart and Yearly Gross Sales -->
+            <!-- The line graph is volume per day for the current year. The bar graph is volume per day for last year -->
             <div class="main-volume card">
                 <div class="volume-header">
                     <h1 class="volume-title">Volume Comparison</h1>
@@ -198,13 +210,13 @@
             </div> <!-- Close main-daily  -->
 
 
-            <!-- Transaction counts and amounts by status -->
+            <!-- Transactions; Counts by transaction status and volume associated with that status -->
             <div class="main-transactions card">
                 <h1 class="transactions-title">Transactions</h1>
             </div> <!-- Close main-transactions  -->
 
 
-            <!-- Amount (and percentage) of payment sources -->
+            <!-- Payment Methods (Sources); Percentage of transactions by payment method -->
             <div class="main-sources card">
                 <h1 class="sources-title">Payment Methods</h1>
                 <div class="sources-method">
@@ -220,7 +232,7 @@
             </div> <!-- Close main-sources -->
 
 
-            <!-- Merchants, counts by status (in system) (?) and funnel (sales) -->
+            <!-- Merchants; Counts by status (in our system) -->
              <div class="main-merchants card">
                 <h1 class="merchants-title">Merchant Analytics</h1>
 
