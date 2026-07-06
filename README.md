@@ -1,2 +1,2 @@
 # salequick-dashboard
-Examples for the new SQ dashboard pags
+Examples for the new SQ dashboard pages
