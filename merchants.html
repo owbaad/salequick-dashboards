@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/merchants.css">
+    <title>Admin | Merchant Overview</title>
+</head>
+
+<body>
+    
+</body>
+<div class="dashboard-container">
+
+        <!-- Header Elements -->
+        <header class="header card">
+            <div class="header-brand">
+                <div class="header-logo">
+                    <img class="header-logo-img" src="images/header/salequick-logo.png" alt="SaleQuick">
+                </div>
+                <h1 class="header-title">Merchant Overview</h1>
+            </div>
+
+            <div class="header-profile">
+                <img class="header-avatar" src="images/header/profile.png" alt="">
+                <p class="header-name">Owen Baadsgaard</p>
+            </div>
+        </header>
+
+
+        <!-- Navigation Elements -->
+        <nav class="nav card">
+            <div class="nav-collapse">
+                <img class="nav-collapse-img" src="images/sidebar/sidebar-collapse.png" alt="Collapse Navigation">
+            </div>
+
+            <ul class="nav-body">
+                <li>
+                    <img class="nav-icon" src="images/sidebar/dashboard.png" alt="">
+                    <p class="nav-title">Dashboard</p>
+                </li>
+                <li>
+                    <img class="nav-icon" src="images/sidebar/merchants_icon.png" alt="">
+                    <a href="merchant-dashboard.html" target="_blank" class="nav-title">Merchants</a>
+                </li>
+                <li>
+                    <img class="nav-icon" src="images/sidebar/payments_icon.png" alt="">
+                    <p class="nav-title">Payments</p>
+                </li>
+                <li>
+                    <img class="nav-icon" src="images/sidebar/partners_icon.png" alt="">
+                    <p class="nav-title">Partners</p>
+                </li>
+                <li>
+                    <img class="nav-icon" src="images/sidebar/marketing-icon.png" alt="">
+                    <p class="nav-title">Marketing</p>
+                </li>
+            </ul>
+
+            <div class="nav-bottom">
+                <p class="nav-powered">Powered By:</p>
+                <p class="nav-company">Milstead Technologies, LLC</p>
+            </div>
+        </nav>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Primary KPIs, top row / full column span -->
+             <div class="main-kpi card">
+                <div class="kpi kpi-volume">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/save-money.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Total Volume</h2>
+                        <h1 class="kpi-value">$11.386M</h1>
+                    </div>
+                </div>
+
+                <div class="kpi kpi-revenue">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/revenue.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Net Revenue</h2>
+                        <h1 class="kpi-value">$412.237K</h1>
+                    </div>
+                </div>
+
+                <div class="kpi kpi-merchants">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Total Merchants</h2>
+                        <h1 class="kpi-value">3,793</h1>
+                    </div>
+                </div>
+
+                <div class="kpi kpi-auth">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/discount.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Authorization Rate</h2>
+                        <h1 class="kpi-value">98.7%</h1>
+                    </div>
+                </div>
+
+                <div class="kpi kpi-chargebacks">
+                    <div class="kpi-icon">
+                        <img class="kpi-icon-img" src="images/main-processing/alert.png" alt="">
+                    </div>
+                    <div class="kpi-body">
+                        <h2 class="kpi-label">Chargeback Rate</h2>
+                        <h1 class="kpi-value"> < 0.1%</h1>
+                    </div>
+                </div>          
+            </div> <!-- Close main-kpi -->
+
+
+            <!-- Volume Progress Bar, second row / full column span -->
+            <div class="main-goal card">
+                <div class="goal-header">
+                    <h1 class="goal-title">Volume Goal Progress</h1>
+                    <h2 class="goal-subtitle">$11.39M / $16.00M</h2>
+                </div>
+
+                <div class="goal-progress" style="--fill: 71.2%">
+                    <div class="progress-total">
+                        <div class="progress-bar"> <span class="progress-marker">71.2%</span> </div>
+                    </div>
+                </div>
+
+                <div class="goal-stats">
+                    <div class="stats-average">
+                        <h2 class="stats-label">Average per Day</h2>
+                        <h1 class="stats-value">$474.58K</h1>
+                    </div>
+
+                    <div class="stats-projected">
+                        <h2 class="stats-label">Projected at End</h2>
+                        <h1 class="stats-value">$14.57M</h1>
+                    </div>
+                    
+                    <div class="stats-comparison">
+                        <h2 class="stats-label">Projected vs. Goal</h2>
+                        <h1 class="stats-value">89.0% - Behind</h1>
+                    </div>
+                </div>
+            </div> <!-- Close main-goal -->
+
+
+            <!-- Graph of volume depending on date interval, comp to LY -->
+            <div class="main-volume card">
+                <div class="volume-header">
+                    <h1 class="volume-title">Volume Comparison</h1>
+                    <div class="volume-legend">
+                        <span><i class="legend-current"></i>Current Year</span>
+                        <span><i class="legend-last"></i>Last Year</span>
+                    </div>
+                </div>
+
+                <div class="volume-chart">
+                    <svg class="chart-line">
+                        <polyline class="line-graph">
+                    </svg>
+
+                    <div class="chart-x">
+                        <span>Jun 1</span>
+                        <span>Jun 2</span>
+                        <span>Jun 3</span>
+                        <span>Jun 4</span>
+                        <span>Jun 5</span>
+                        <span>Jun 6</span>
+                        <span>Jun 7</span>
+                        <span>Jun 8</span>
+                        <span>Jun 9</span>
+                        <span>Jun 10</span>
+                        <span>Jun 11</span>
+                        <span>Jun 12</span>
+                        <span>Jun 13</span>
+                        <span>Jun 14</span>
+                        <span>Jun 15</span>
+                        <span>Jun 16</span>
+                        <span>Jun 17</span>
+                        <span>Jun 18</span>
+                        <span>Jun 19</span>
+                        <span>Jun 20</span>
+                        <span>Jun 21</span>
+                        <span>Jun 22</span>
+                        <span>Jun 23</span>
+                        <span>Jun 24</span>
+                    </div>
+                </div>
+            </div> <!-- Close main-daily  -->
+
+
+            <!-- Transaction counts and amounts by status -->
+            <div class="main-transactions card">
+                <h1 class="transactions-title">Transactions</h1>
+            </div> <!-- Close main-transactions  -->
+
+
+            <!-- Amount (and percentage) of payment sources -->
+            <div class="main-sources card">
+                <h1 class="sources-title">Payment Methods</h1>
+                <div class="sources-method">
+                    <div class="method-donut"></div>
+                    <div class="method-legend">
+                        <span><i style="background:#0B9BCF"></i>Terminal 38%</span>
+                        <span><i style="background:#5BC980"></i>Invoice 27%</span>
+                        <span><i style="background:#EEBF04"></i>Recurring 21%</span>
+                        <span><i style="background:#20358E"></i>Virtual Terminal 9%</span>
+                        <span><i style="background:#DA2637"></i>ACH 5%</span>
+                    </div>
+                </div>
+            </div> <!-- Close main-sources -->
+
+
+            <!-- Merchants, counts by status (in system) (?) and funnel (sales) -->
+             <div class="main-merchants card">
+                <h1 class="merchants-title">Merchant Analytics</h1>
+
+                <div class="merchants-status">
+                    <div class="status status-leads">
+                        <h2 class="status-label">Leads</h2>
+                        <h1 class="status-value">1,283</h1>
+                    </div>
+
+                    <div class="status status-qualified">
+                        <h2 class="status-label">Qualified</h2>
+                        <h1 class="status-value">275</h1>
+                    </div>
+
+                    <div class="status status-underwriting">
+                        <h2 class="status-label">In Underwriting</h2>
+                        <h1 class="status-value">31</h1>
+                    </div>
+
+                    <div class="status status-approved">
+                        <h2 class="status-label">Approved</h2>
+                        <h1 class="status-value">23</h1>
+                    </div>
+                </div>
+             </div> <!-- Close main-merchants -->
+
+
+        </main> <!-- Close main -->
+    </div> <!-- Close dashboard-container --> 
+
+</html>

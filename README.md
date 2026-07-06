@@ -1,2 +1,2 @@
-# odin-admin-dashboard
-Intermediate HTML and CSS/Forms/Admin Dashboard project per The Odin Project
+# salequick-dashboard
+Examples for the new SQ dashboard pags

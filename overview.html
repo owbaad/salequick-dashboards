@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/overview.css">
     <title>Admin | Company Overview</title>
 </head>
 
@@ -40,7 +41,7 @@
                 </li>
                 <li>
                     <img class="nav-icon" src="images/sidebar/merchants_icon.png" alt="">
-                    <p class="nav-title">Merchants</p>
+                    <a href="merchant-dashboard.html" target="_blank" class="nav-title">Merchants</a>
                 </li>
                 <li>
                     <img class="nav-icon" src="images/sidebar/payments_icon.png" alt="">
@@ -74,8 +75,7 @@
                     </div>
                     <div class="kpi-body">
                         <h2 class="kpi-label">Total Volume</h2>
-                        <h1 class="kpi-value">$11.39M</h1>
-                        <h2 class="kpi-delta">28.8% from Goal</h2>
+                        <h1 class="kpi-value">$11.386M</h1>
                     </div>
                 </div>
 
@@ -85,8 +85,7 @@
                     </div>
                     <div class="kpi-body">
                         <h2 class="kpi-label">Net Revenue</h2>
-                        <h1 class="kpi-value">$412.23K</h1>
-                        <h2 class="kpi-delta">Up 6.2% from LM</h2>
+                        <h1 class="kpi-value">$412.237K</h1>
                     </div>
                 </div>
 
@@ -97,7 +96,6 @@
                     <div class="kpi-body">
                         <h2 class="kpi-label">Total Merchants</h2>
                         <h1 class="kpi-value">3,793</h1>
-                        <h2 class="kpi-delta">Up 34</h2>
                     </div>
                 </div>
 
@@ -106,9 +104,8 @@
                         <img class="kpi-icon-img" src="images/main-processing/discount.png" alt="">
                     </div>
                     <div class="kpi-body">
-                        <h2 class="kpi-label">Auth Rate</h2>
+                        <h2 class="kpi-label">Authorization Rate</h2>
                         <h1 class="kpi-value">98.7%</h1>
-                        <h2 class="kpi-delta">Down 0.01% from LM</h2>
                     </div>
                 </div>
 
@@ -119,7 +116,6 @@
                     <div class="kpi-body">
                         <h2 class="kpi-label">Chargeback Rate</h2>
                         <h1 class="kpi-value"> < 0.1%</h1>
-                        <h2 class="kpi-delta">Under Threshold</h2>
                     </div>
                 </div>          
             </div> <!-- Close main-kpi -->
@@ -211,6 +207,16 @@
             <!-- Amount (and percentage) of payment sources -->
             <div class="main-sources card">
                 <h1 class="sources-title">Payment Methods</h1>
+                <div class="sources-method">
+                    <div class="method-donut"></div>
+                    <div class="method-legend">
+                        <span><i style="background:#0B9BCF"></i>Terminal 38%</span>
+                        <span><i style="background:#5BC980"></i>Invoice 27%</span>
+                        <span><i style="background:#EEBF04"></i>Recurring 21%</span>
+                        <span><i style="background:#20358E"></i>Virtual Terminal 9%</span>
+                        <span><i style="background:#DA2637"></i>ACH 5%</span>
+                    </div>
+                </div>
             </div> <!-- Close main-sources -->
 
 
