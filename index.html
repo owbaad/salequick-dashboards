@@ -46,6 +46,7 @@
                 </div>
 
                 <!-- Merchant Count; Not any specific status just a total of all merchants -->
+                <!-- This is NOT affected by the active date filter. It will always be current merchant count. -->
                 <div class="kpi kpi-merchants">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
@@ -165,7 +166,14 @@
             <!-- Transactions; Counts by transaction status and volume associated with that status -->
             <div class="main-transactions card">
                 <h1 class="transactions-title">Transactions</h1>
-                
+
+                <div class="transactions-status">
+                    <div class="transactions-row"><span class="transactions-label">Confirmed</span><span class="transactions-value">142,308</span></div>
+                    <div class="transactions-row"><span class="transactions-label">Pending</span><span class="transactions-value">3,942</span></div>
+                    <div class="transactions-row"><span class="transactions-label">Failed</span><span class="transactions-value">8,614</span></div>
+                    <div class="transactions-row"><span class="transactions-label">Refunded</span><span class="transactions-value">1,205</span></div>
+                    <div class="transactions-row"><span class="transactions-label">Chargeback</span><span class="transactions-value">968</span></div>
+                </div>
             </div> <!-- Close main-transactions  -->
 
 
@@ -178,7 +186,7 @@
                         <span><i class="legend legend-vt" style="background:#0B9BCF"></i>Virtual Terminal (38%)</span>
                         <span><i class="legend legend-inv" style="background:#5BC980"></i>Invoice (27%)</span>
                         <span><i class="legend legend-recurring" style="background:#EEBF04"></i>Recurring (21%)</span>
-                        <span><i class="legend legend-terminal" style="background:#20358E"></i>Terminal (9%)</span>
+                        <span><i class="legend legend-ecommerce" style="background:#20358E"></i>Ecommerce (9%)</span>
                         <span><i class="legend egend-ach" style="background:#DA2637"></i>ACH (5%)</span>
                     </div>
                 </div>
