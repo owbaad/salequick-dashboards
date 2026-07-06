@@ -52,10 +52,46 @@
 .status-account-pending { --status-accent: #DA2637; }
 
 
+/* --- .main-sponsors, Sponsor Bank Counts --- */
+.main-sponsors {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    gap: 30px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsors-container {
+    display: flex;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    gap: 15px;
+    border-right: 1px solid lightgray;
+ }
+
+.sponsor-paysafe { border: none !important; }
+
+.sponsors-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+.sponsors-icon-img { height: 40px; width: 40px; }
+
+.sponsors-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.sponsors-value { 
+    font-size: var(--fs-subheading); 
+    font-weight: var(--fw-heavy); 
+}
+
+
 /* --- .main-approved, Approved Category Merchant Counts  --- */
 .main-approved {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     gap: 30px;
     padding: 30px;
 
@@ -82,36 +118,3 @@
 .status-active { --status-accent: #5BC980; border-right: 1px solid lightgray; }
 .status-inactive { --status-accent: #EEBF04; border-right: 1px solid lightgray; }
 .status-cold { --status-accent: #DA2637; }
-
-
-/* --- .main-sponsors, Sponsor Bank Counts --- */
-.main-sponsors {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    gap: 30px;
-    padding: 30px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.sponsors-container {
-    display: flex;
-}
-
-.sponsors {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    flex: 1;
-    gap: 15px;
- }
-
-.sponsors-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
-.sponsors-icon-img { height: 40px; width: 40px; }
-
-.sponsors-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
-.sponsors-value { 
-    font-size: var(--fs-subheading); 
-    font-weight: var(--fw-heavy); 
-}
