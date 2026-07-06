@@ -1,5 +1,5 @@
 /* --- Resets --- */
-ul {list-style-type: none;}
+ul { list-style-type: none; }
 
 
 /* --- General Settings, imports, etc. --- */
@@ -32,7 +32,7 @@ ul {list-style-type: none;}
 
 html, body {
     background-color: var(--background-color);
-    padding: clamp(2px, 3vw, 10px);
+    padding: 10px;
     overflow: hidden;
     height: 100vh;
 }

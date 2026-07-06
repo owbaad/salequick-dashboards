@@ -1,5 +1,5 @@
 # salequick-dashboards
-Repository showing example UI (some JS) for the new SaleQuick dashboard pages.\
+Repository showing example UI (some unimportant JS) for the new SaleQuick dashboard pages.\
 The colors, layout, etc. was eyeballed and replicated, not an exact copy of the SQ HTML. Please just reference the main elements, those are the only important elements.\
 Each of the html files contains comments explaining the element, data source if necessary, which API to use, etc.\
 **The navigation menu was used to link the other dashboards. Obviously this is not how it will work on the actual website but you can click between the other sites that way.** 
