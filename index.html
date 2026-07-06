@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/includes.js" defer></script>
+    <script src="js/volume-chart.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/overview.css">
@@ -128,42 +129,19 @@
                     </div>
                 </div>
 
+                <!-- Example data is from js/volume-chart.js -->
                 <div class="volume-chart">
-                    <svg class="chart-line">
-                        <polyline class="line-graph">
+                    <svg class="chart-svg" viewBox="0 0 960 260" preserveAspectRatio="none">
+                        <g class="bars"></g>
+                        <polyline class="line-graph" fill="none" />
+                        <g class="points"></g>
                     </svg>
-
-                    <div class="chart-x">
-                        <span>Jun 1</span>
-                        <span>Jun 2</span>
-                        <span>Jun 3</span>
-                        <span>Jun 4</span>
-                        <span>Jun 5</span>
-                        <span>Jun 6</span>
-                        <span>Jun 7</span>
-                        <span>Jun 8</span>
-                        <span>Jun 9</span>
-                        <span>Jun 10</span>
-                        <span>Jun 11</span>
-                        <span>Jun 12</span>
-                        <span>Jun 13</span>
-                        <span>Jun 14</span>
-                        <span>Jun 15</span>
-                        <span>Jun 16</span>
-                        <span>Jun 17</span>
-                        <span>Jun 18</span>
-                        <span>Jun 19</span>
-                        <span>Jun 20</span>
-                        <span>Jun 21</span>
-                        <span>Jun 22</span>
-                        <span>Jun 23</span>
-                        <span>Jun 24</span>
-                    </div>
+                    <div class="chart-x"></div>
                 </div>
             </div> <!-- Close main-daily  -->
 
 
-            <!-- Transactions; Counts by transaction status and volume associated with that status -->
+            <!-- Transactions; Counts by transaction status -->
             <div class="main-transactions card">
                 <h1 class="transactions-title">Transactions</h1>
 
