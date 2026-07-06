@@ -3,67 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/includes.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/overview.css">
     <title>Admin | Company Overview</title>
 </head>
 
-<body>
+<body data-title="Company Overview">
 
     <div class="dashboard-container">
 
-        <!-- Header Elements -->
-        <header class="header card">
-            <div class="header-brand">
-                <div class="header-logo">
-                    <img class="header-logo-img" src="images/header/salequick-logo.png" alt="SaleQuick">
-                </div>
-                <h1 class="header-title">Company Overview</h1>
-            </div>
-
-            <div class="header-profile">
-                <img class="header-avatar" src="images/header/profile.png" alt="">
-                <p class="header-name">Owen Baadsgaard</p>
-            </div>
-        </header>
-
-
-        <!-- Navigation Elements -->
-        <nav class="nav card">
-            <div class="nav-collapse">
-                <img class="nav-collapse-img" src="images/sidebar/sidebar-collapse.png" alt="Collapse Navigation">
-            </div>
-
-            <ul class="nav-body">
-                <li>
-                    <img class="nav-icon" src="images/sidebar/dashboard.png" alt="">
-                    <p class="nav-title">Dashboard</p>
-                </li>
-                <li>
-                    <img class="nav-icon" src="images/sidebar/merchants_icon.png" alt="">
-                    <a href="merchant-dashboard.html" target="_blank" class="nav-title">Merchants</a>
-                </li>
-                <li>
-                    <img class="nav-icon" src="images/sidebar/payments_icon.png" alt="">
-                    <p class="nav-title">Payments</p>
-                </li>
-                <li>
-                    <img class="nav-icon" src="images/sidebar/partners_icon.png" alt="">
-                    <p class="nav-title">Partners</p>
-                </li>
-                <li>
-                    <img class="nav-icon" src="images/sidebar/marketing-icon.png" alt="">
-                    <p class="nav-title">Marketing</p>
-                </li>
-            </ul>
-
-            <div class="nav-bottom">
-                <p class="nav-powered">Powered By:</p>
-                <p class="nav-company">Milstead Technologies, LLC</p>
-            </div>
-        </nav>
-
+        <header class="header card" id="site-header"></header>
+        <nav class="nav card" id="site-nav"></nav>
 
         <!-- Main Content -->
         <main class="main">
@@ -264,5 +216,4 @@
     </div> <!-- Close dashboard-container --> 
 
 </body>
-
 </html>
