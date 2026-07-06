@@ -20,17 +20,110 @@
         <!-- Main Content -->
         <main class="main">
 
-            <!-- Merchant Statuses by Category -->
-            <div class="main-status card">
-                <div class="status-underwriting">
-                </div>
+            <!-- Underwriting Statuses Count -->
+            <div class="main-underwriting card">
+                <h1 class="underwriting-title">Merchants in Underwriting</h1>
 
-                <div class="status-approved">
-                </div>
+                <div class="underwriting-container">
+                    <div class="underwriting status-application-pending">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Application Pending</h2>
+                            <h1 class="status-value">82</h1>
+                        </div>
+                    </div>
 
-                <div class="status-issue">
-                </div>  
-            </div> <!-- Close main-statuses -->
+                    <div class="underwriting status-signature-pending">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Signature Pending</h2>
+                            <h1 class="status-value">34</h1>
+                        </div>
+                    </div>
+
+                    <div class="underwriting status-application-received">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Application Received</h2>
+                            <h1 class="status-value">27</h1>
+                        </div>
+                    </div>
+
+                    <div class="underwriting status-in-underwriting">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">In Underwriting</h2>
+                            <h1 class="status-value">14</h1>
+                        </div>
+                    </div>
+
+                    <div class="underwriting status-account-pending">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Account Pending</h2>
+                            <h1 class="status-value">19</h1>
+                        </div>
+                    </div>
+                </div> <!-- Close underwriting-container  -->
+            </div> <!-- Close main-underwriting -->
+
+            <!-- Approved Statuses Count -->
+            <div class="main-approved card">
+                <h1 class="approved-title">Approved Merchants</h1>
+
+                <div class="approved-container">
+                    <div class="approved status-approved">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Approved</h2>
+                            <h1 class="status-value">3,793</h1>
+                        </div>
+                    </div>
+
+                    <div class="approved status-active">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Active</h2>
+                            <h1 class="status-value">2,173</h1>
+                        </div>
+                    </div>
+
+                    <div class="approved status-inactive">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Inactive</h2>
+                            <h1 class="status-value">432</h1>
+                        </div>
+                    </div>
+
+                    <div class="approved status-cold">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Cold</h2>
+                            <h1 class="status-value">289</h1>
+                        </div>
+                    </div>
+
+                </div> <!-- Close approved-container -->
+            </div> <!-- Close main-approved -->
 
         </main> <!-- Close main -->
     </div> <!-- Close dashboard-container --> 
