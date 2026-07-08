@@ -6,7 +6,7 @@
     <script src="js/includes.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/merchants.css">
+    <link rel="stylesheet" href="css/payments.css">
     <title>Admin | Payments Breakdown</title>
 </head>
 
@@ -20,17 +20,64 @@
         <!-- Main Content -->
         <main class="main">
 
-            <!-- Merchant Statuses by Category -->
-            <div class="main-status card">
-                <div class="status-underwriting">
+            <!-- Transaction Statuses -->
+             <div class="main-transactions card">
+
+                <!-- Confirmed Transactions -->
+                <div class="transactions transactions-confirmed">
+                    <div class="transactions-icon">
+                        <img class="transactions-icon-img" src="images/main-processing/save-money.png" alt="">
+                    </div>
+                    <div class="transactions-body">
+                        <h2 class="transactions-label">Confirmed</h2>
+                        <h1 class="transactions-value">142,308</h1>
+                    </div>
                 </div>
 
-                <div class="status-approved">
+                <!-- Failed Count-->
+                <div class="transactions transactions-pending">
+                    <div class="transactions-icon">
+                        <img class="transactions-icon-img" src="images/main-processing/revenue.png" alt="">
+                    </div>
+                    <div class="transactions-body">
+                        <h2 class="transactions-label">Pending</h2>
+                        <h1 class="transactions-value">3,942</h1>
+                    </div>
                 </div>
 
-                <div class="status-issue">
-                </div>  
-            </div> <!-- Close main-statuses -->
+                <!-- Failed Count -->
+                <div class="transactions transactions-failed">
+                    <div class="transactions-icon">
+                        <img class="transactions-icon-img" src="images/main-processing/group.png" alt="">
+                    </div>
+                    <div class="transactions-body">
+                        <h2 class="transactions-label">Failed</h2>
+                        <h1 class="transactions-value">8,614</h1>
+                    </div>
+                </div>
+
+                <!-- Refunded Count-->
+                <div class="transactions transactions-refunded">
+                    <div class="transactions-icon">
+                        <img class="transactions-icon-img" src="images/main-processing/discount.png" alt="">
+                    </div>
+                    <div class="transactions-body">
+                        <h2 class="transactions-label">Refunded</h2>
+                        <h1 class="transactions-value">1,205</h1>
+                    </div>
+                </div>
+
+                <!-- Chargeback Count -->
+                <div class="transactions transactions-chargebacks">
+                    <div class="transactions-icon">
+                        <img class="transactions-icon-img" src="images/main-processing/alert.png" alt="">
+                    </div>
+                    <div class="transactions-body">
+                        <h2 class="transactions-label">Chargebacks</h2>
+                        <h1 class="transactions-value">968</h1>
+                    </div>
+                </div>          
+            </div> <!-- Close main-transactions -->
 
         </main> <!-- Close main -->
     </div> <!-- Close dashboard-container --> 

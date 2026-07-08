@@ -1,0 +1,47 @@
+/* --- .main, holds all primary content and sets up grid for main elements --- */
+.main {
+    grid-column: 2 / 3;
+    overflow-y: auto;
+    min-height: 0;
+    width: auto;
+
+    display: grid;
+    grid-template: auto auto auto 1fr / repeat(6, 1fr);
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+/* --- .main-primary, KPIs  --- */
+.main-transactions {
+    grid-column: 1 / -1;
+    gap: 0;
+    padding: 30px;
+
+    display: flex;
+}
+
+.transactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    gap: 15px;
+ }
+
+.transactions-icon-img { height: 40px; width: 40px; }
+
+.transactions-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.transactions-value { 
+    color: var(--transactions-accent); 
+    font-size: var(--fs-subheading); 
+    font-weight: var(--fw-heavy); 
+}
+
+.transactions-confirmed { --transactions-accent: var(--blue); border-right: 1px solid lightgray; }
+.transactions-pending { --transactions-accent: var(--green); border-right: 1px solid lightgray; }
+.transactions-failed { --transactions-accent: var(--yellow); border-right: 1px solid lightgray; }
+.transactions-refunded { --transactions-accent: var(--pink); border-right: 1px solid lightgray; }
+.transactions-chargebacks { --transactions-accent: var(--red); }
