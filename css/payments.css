@@ -69,15 +69,20 @@
 }
 
 .sponsors-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 7px 0;
     border-bottom: 1px solid var(--primary-blue);
 }
 
+.sponsors-row > :first-child { justify-self: start; }
+.sponsors-row > :nth-child(2) { justify-self: center; }
+.sponsors-row > :last-child { justify-self: end; }
+
 .sponsors-row:last-child { border-bottom: none }
 .sponsors-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.sponsors-count { font-size: var(--fs-text); font-weight: var(--fw-light); }
 .sponsors-value { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
 
 
@@ -102,15 +107,20 @@
 }
 
 .sources-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 7px 0;
     border-bottom: 1px solid var(--primary-blue);
 }
 
-.sources-row:last-child { border-bottom: none }
+.sources-row > :first-child { justify-self: start; }
+.sources-row > :nth-child(2) { justify-self: center; }
+.sources-row > :last-child { justify-self: end; }
+
+.sources-row:last-child { border-bottom: none; }
 .sources-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.sources-count { font-size: var(--fs-text); font-weight: var(--fw-light); }
 .sources-value { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
 
 
@@ -135,13 +145,18 @@
 }
 
 .other-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 7px 0;
     border-bottom: 1px solid var(--primary-blue);
 }
 
+.other-row > :first-child { justify-self: start; }
+.other-row > :nth-child(2) { justify-self: center; }
+.other-row > :last-child { justify-self: end; }
+
 .other-row:last-child { border-bottom: none }
 .other-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.other-count { font-size: var(--fs-text); font-weight: var(--fw-light); }
 .other-value { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
