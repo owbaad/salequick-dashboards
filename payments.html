@@ -24,13 +24,14 @@
         <main class="main">
 
             <!-- Standard, Date Range selector. Default is month-to-date -->
+            <!-- All datapoints fall back to this range UNLESS SPECIFICALLY MARKED OTHERWISE -->
             <div class="main-selector" id="main-selector"></div>
             
 
-            <!-- Transaction Statuses -->
+            <!-- Transaction Counts; by Status -->
              <div class="main-transactions card">
 
-                <!-- Confirmed Transactions -->
+                <!-- Confirmed Transactions Count -->
                 <div class="transactions transactions-confirmed">
                     <div class="transactions-icon">
                         <img class="transactions-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -41,7 +42,7 @@
                     </div>
                 </div>
 
-                <!-- Failed Count-->
+                <!-- Pending Transactions Count-->
                 <div class="transactions transactions-pending">
                     <div class="transactions-icon">
                         <img class="transactions-icon-img" src="images/main-processing/revenue.png" alt="">
@@ -52,7 +53,7 @@
                     </div>
                 </div>
 
-                <!-- Failed Count -->
+                <!-- Failed Transactions Count -->
                 <div class="transactions transactions-failed">
                     <div class="transactions-icon">
                         <img class="transactions-icon-img" src="images/main-processing/group.png" alt="">
@@ -63,7 +64,7 @@
                     </div>
                 </div>
 
-                <!-- Refunded Count-->
+                <!-- Refunded Transactions Count-->
                 <div class="transactions transactions-refunded">
                     <div class="transactions-icon">
                         <img class="transactions-icon-img" src="images/main-processing/discount.png" alt="">
@@ -91,11 +92,17 @@
                 <h1 class="sponsors-title">Volume by Sponsor Bank</h1>
 
                 <div class="sponsors-status">
+                    <!-- TSYS Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">TSYS</span><span class="sponsors-value">$ 3,217,816.43</span></div>
+                    <!-- Payroc Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">Payroc</span><span class="sponsors-value">$ 5,432,192.67</span></div>
+                    <!-- Woodforest Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">Woodforest</span><span class="sponsors-value">$ 1,801,345.12</span></div>
+                    <!-- SkyTab Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">SkyTab</span><span class="sponsors-value">$ 584,300.98</span></div>
+                    <!-- BetterPay Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">BetterPay</span><span class="sponsors-value">$ 2,117,985.53</span></div>
+                    <!-- Paysafe Volume -->
                     <div class="sponsors-row"><span class="sponsors-label">Paysafe</span><span class="sponsors-value">$ 1,009,102.78</span></div>
                 </div>
             </div> <!-- Close main-sponsors  -->
@@ -105,10 +112,15 @@
                 <h1 class="sources-title">Volume by Payment Method</h1>
 
                 <div class="sources-status">
+                    <!-- VT Volume, includes Pax, iOS, and Android -->
                     <div class="sources-row"><span class="sources-label">Virtual Terminal</span><span class="sources-value">$ 5,432,192.67</span></div>
+                    <!-- Invoice Volume -->
                     <div class="sources-row"><span class="sources-label">Invoice</span><span class="sources-value">$ 3,217,816.43</span></div>
+                    <!-- Recurring Volume -->
                     <div class="sources-row"><span class="sources-label">Recurring</span><span class="sources-value">$ 2,117,985.53</span></div>
+                    <!-- Ecommerce Volume -->
                     <div class="sources-row"><span class="sources-label">Ecommerce</span><span class="sources-value">$ 1,801,345.12</span></div>
+                    <!-- ACH Volume -->
                     <div class="sources-row"><span class="sources-label">ACH</span><span class="sources-value">$ 584,300.98</span></div>
                 </div>
             </div> <!-- Close main-sources  -->
@@ -118,9 +130,13 @@
                 <h1 class="other-title">Miscellaneous Volume</h1>
 
                 <div class="other-status">
+                    <!-- Pending Volume -->
                     <div class="other-row"><span class="other-label">Amount Pending</span><span class="other-value">$ 841,320.44</span></div>
+                    <!-- Failed Volume -->
                     <div class="other-row"><span class="other-label">Amount Failed</span><span class="other-value">$ 2,104,991.67</span></div>
+                    <!-- Refunded Volume -->
                     <div class="other-row"><span class="other-label">Amount Refunded</span><span class="other-value">$ 524,578.01</span></div>
+                    <!-- Chargeback Volume -->
                     <div class="other-row"><span class="other-label">Chargeback Volume</span><span class="other-value">$ 35,432.98</span></div>
                 </div>
             </div> <!-- Close main-other  -->

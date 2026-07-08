@@ -22,6 +22,7 @@
         <main class="main">
 
             <!-- Standard, Date Range selector. Default is month-to-date -->
+            <!-- All datapoints fall back to this range UNLESS SPECIFICALLY MARKED OTHERWISE -->
             <div class="main-selector" id="main-selector"></div>
 
 
@@ -154,10 +155,15 @@
                 <h1 class="transactions-title">Transactions</h1>
 
                 <div class="transactions-status">
+                    <!-- Confirmed Transaction Count -->
                     <div class="transactions-row"><span class="transactions-label">Confirmed</span><span class="transactions-value">142,308</span></div>
+                    <!-- Pending Transaction Count -->
                     <div class="transactions-row"><span class="transactions-label">Pending</span><span class="transactions-value">3,942</span></div>
+                    <!-- Failed Transaction Count -->
                     <div class="transactions-row"><span class="transactions-label">Failed</span><span class="transactions-value">8,614</span></div>
+                    <!-- Refunded Transaciton Count -->
                     <div class="transactions-row"><span class="transactions-label">Refunded</span><span class="transactions-value">1,205</span></div>
+                    <!-- Chargeback Transaction Count -->
                     <div class="transactions-row"><span class="transactions-label">Chargeback</span><span class="transactions-value">968</span></div>
                 </div>
             </div> <!-- Close main-transactions  -->
@@ -182,11 +188,13 @@
 
 
             
-            <!-- Merchants; Counts by status (in our system) -->
+            <!-- Merchants; Month-to-Date metrics, NOT all-time totals -->
              <div class="main-merchants card">
                 <h1 class="merchants-title">Merchant Analytics</h1>
 
                 <div class="merchants-content">
+
+                    <!-- Leads Total; from Zoho -->
                     <div class="merchants merchants-leads">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -197,6 +205,7 @@
                         </div>
                     </div>
 
+                    <!-- Qualified Leads Total; from Zoho -->
                     <div class="merchants merchants-qualified">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -207,6 +216,8 @@
                         </div>
                     </div>
 
+                    <!-- Total (MTD) Accounts In Underwriting -->
+                    <!-- Includes Application Pending, Signature Pending, Application Received, In Underwriting, and Account Pending statuses -->
                     <div class="merchants merchants-underwriting">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -217,6 +228,7 @@
                         </div>
                     </div>
 
+                    <!-- Approved Merchants (MTD) (Not Inactive or Cold) -->
                     <div class="merchants merchants-approved">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -227,6 +239,7 @@
                         </div>
                     </div>
 
+                    <!-- Total Merchants Active or Cold -->
                     <div class="merchants merchants-processing">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
