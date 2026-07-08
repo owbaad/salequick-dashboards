@@ -1,0 +1,16 @@
+/* --- .main, holds all primary content and sets up grid for main elements --- */
+.main {
+    grid-column: 2 / 3;
+    overflow-y: auto;
+    min-height: 0;
+    width: auto;
+
+    display: grid;
+    grid-template: auto auto 1fr / repeat(6, 1fr);
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+/* --- next item here --- */
