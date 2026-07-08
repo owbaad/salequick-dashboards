@@ -6,7 +6,7 @@
     width: auto;
 
     display: grid;
-    grid-template: auto auto repeat(3, 2fr) / repeat(5, 1fr);
+    grid-template: auto auto auto auto 1fr / repeat(5, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -266,10 +266,10 @@
 
 /* -- .main-merchants, funnel and counts(?) */
 .main-merchants {
-    grid-row: 6 / -1;
+    grid-row: 5 / -1;
     grid-column: 1 / -1;
     gap: 30px;
-    padding: 20px;
+    padding: 30px;
 
     display: flex;
     flex-direction: column;
