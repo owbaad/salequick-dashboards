@@ -176,11 +176,14 @@ li {display: flex; align-items: center; gap: 15px; width: 100%;}
 }
 
 .selector-update { font-size: var(--fs-text); font-weight: var(--fw-light); }
+
+.selector-buttons { display: flex; gap: 10px; }
 .selector-button {
     background: var(--background-color);
     border: 1px solid var(--primary-gray);
     font-size: var(--fs-text);
     border-radius: 10px;
-    height: 40px;
-    width: 240px; 
+    padding: 10px;
+    height: auto;
+    width: auto; 
 }
