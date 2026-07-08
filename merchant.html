@@ -6,7 +6,7 @@
     <script src="js/includes.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/merchants.css">
+    <link rel="stylesheet" href="css/merchant.css">
     <title>Admin | Merchant Breakdown</title>
 </head>
 
@@ -25,12 +25,63 @@
             <div class="main-selector" id="main-selector"></div>
             
 
+            <!-- Approved Category Counts -->
+            <div class="main-approved card">
+
+                <div class="approved-top">
+                    <!-- Approved Count -->
+                    <div class="approved status-approved">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Approved</h2>
+                            <h1 class="status-value">3,793</h1>
+                        </div>
+                    </div>
+
+                    <!-- Active Count -->
+                    <div class="approved status-active">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Active</h2>
+                            <h1 class="status-value">2,173</h1>
+                        </div>
+                    </div>
+                </div> <!-- Close top-container -->
+
+                <div class="approved-bottom">
+                    <!-- Inactive Count -->
+                    <div class="approved status-inactive">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Inactive</h2>
+                            <h1 class="status-value">432</h1>
+                        </div>
+                    </div>
+
+                    <!-- Cold Count -->
+                    <div class="approved status-cold">
+                        <div class="status-icon">
+                            <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
+                        </div>
+                        <div class="status-body">
+                            <h2 class="status-label">Cold</h2>
+                            <h1 class="status-value">289</h1>
+                        </div>
+                    </div>
+                </div> <!-- Close bottom-container -->
+            </div> <!-- Close main-approved -->
+
+
             <!-- Underwriting Category Counts -->
             <div class="main-underwriting card">
-                <!-- <h1 class="underwriting-title">Merchants in Underwriting</h1> -->
 
-                <div class="underwriting-container">
-
+                <div class="underwriting-top">
                     <!-- Application Pending Count -->
                     <div class="underwriting status-application-pending">
                         <div class="status-icon">
@@ -63,7 +114,9 @@
                             <h1 class="status-value">27</h1>
                         </div>
                     </div>
+                </div>
 
+                <div class="underwriting-bottom">
                     <!-- In Underwriting Count -->
                     <div class="underwriting status-in-underwriting">
                         <div class="status-icon">
@@ -92,10 +145,8 @@
             
             <!-- Sponsor Bank Counts -->
             <div class="main-sponsors card">
-                <!-- <h1 class="sponsors-title">Sponsor Banks</h1> -->
 
                 <div class="sponsors-container">
-
                     <!-- TSYS Count -->
                     <div class="sponsors sponsor-tsys">
                         <div class="sponsors-icon">
@@ -161,64 +212,41 @@
                             <h1 class="sponsors-value">93</h1>
                         </div>
                     </div>
-
                 </div> <!-- Close sponsors-container -->
             </div> <!-- Close main-sponsors  -->
 
 
+            <div class="main-warning card">
+                <h1 class="warning-title">Merchant Inactivity</h1>
 
-            <!-- Approved Category Counts -->
-            <div class="main-approved card">
-                <!-- <h1 class="approved-title">Approved Merchants</h1> -->
+                <div class="warning-table">
 
-                <div class="approved-container">
-                    
-                    <!-- Approved Count -->
-                    <div class="approved status-approved">
-                        <div class="status-icon">
-                            <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
-                        </div>
-                        <div class="status-body">
-                            <h2 class="status-label">Approved</h2>
-                            <h1 class="status-value">3,793</h1>
-                        </div>
+                    <!-- Each row is unique, example used here -->
+                    <div class="warning-row">
+                        <span class="warning-merchant">Seale and Sons Trucking</span>
+                        <span class="warning-status">Cold</span>
+                        <span class="warning-since">May 13th, 2026 at 11:05am</span>
+                        <span class="warning-email">address@domain.com</span>
+                        <span class="warning-phone">(713) 111-2222</span>
                     </div>
 
-                    <!-- Active Count -->
-                    <div class="approved status-active">
-                        <div class="status-icon">
-                            <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
-                        </div>
-                        <div class="status-body">
-                            <h2 class="status-label">Active</h2>
-                            <h1 class="status-value">2,173</h1>
-                        </div>
+                    <div class="warning-row">
+                        <span class="warning-merchant">S3 Business Solutions</span>
+                        <span class="warning-status">Inactive</span>
+                        <span class="warning-since">June 23rd, 2026 at 4:36pm</span>
+                        <span class="warning-email">address@domain.com</span>
+                        <span class="warning-phone">(713) 111-2222</span>
                     </div>
 
-                    <!-- Inactive Count -->
-                    <div class="approved status-inactive">
-                        <div class="status-icon">
-                            <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
-                        </div>
-                        <div class="status-body">
-                            <h2 class="status-label">Inactive</h2>
-                            <h1 class="status-value">432</h1>
-                        </div>
+                    <div class="warning-row">
+                        <span class="warning-merchant">Milstead Service Center</span>
+                        <span class="warning-status">Inactive</span>
+                        <span class="warning-since">June 22nd, 2026 at 3:21pm</span>
+                        <span class="warning-email">address@domain.com</span>
+                        <span class="warning-phone">(713) 111-2222</span>
                     </div>
-
-                    <!-- Cold Count -->
-                    <div class="approved status-cold">
-                        <div class="status-icon">
-                            <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
-                        </div>
-                        <div class="status-body">
-                            <h2 class="status-label">Cold</h2>
-                            <h1 class="status-value">289</h1>
-                        </div>
-                    </div>
-
-                </div> <!-- Close approved-container -->
-            </div> <!-- Close main-approved -->
+                </div>
+            </div>
 
         </main> <!-- Close main -->
     </div> <!-- Close dashboard-container --> 

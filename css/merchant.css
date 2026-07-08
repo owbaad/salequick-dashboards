@@ -12,18 +12,66 @@
 }
 
 
+
+/* --- .main-approved, Approved Category Merchant Counts  --- */
+.main-approved {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    gap: 40px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.approved-top {
+    display: flex;
+}
+.approved-bottom {
+    display: flex;
+}
+
+.approved {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    gap: 15px;
+ }
+
+.status-icon-img { height: 40px; width: 40px; }
+
+.status-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.status-value { 
+    color: var(--status-accent); 
+    font-size: var(--fs-subheading); 
+    font-weight: var(--fw-heavy); 
+}
+
+.status-approved { --status-accent: #0B9BCF; border-right: 1px solid lightgray; }
+.status-active { --status-accent: #5BC980; }
+.status-inactive { --status-accent: #EEBF04; border-right: 1px solid lightgray; }
+.status-cold { --status-accent: #DA2637; }
+
+
+
 /* --- .main-underwriting, In Underwriting Category Merchant Counts  --- */
 .main-underwriting {
-    grid-column: 1 / -1;
+    grid-column: 4 / -1;
     grid-row: 2 / 3;
-    gap: 30px;
+    gap: 40px;
     padding: 30px;
 
     display: flex;
     flex-direction: column;
 }
 
-.underwriting-container {
+.underwriting-top {
+    display: flex;
+}
+.underwriting-bottom {
     display: flex;
 }
 
@@ -36,19 +84,9 @@
     gap: 15px;
  }
 
-.underwriting-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
-.status-icon-img { height: 40px; width: 40px; }
-
-.status-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
-.status-value { 
-    color: var(--status-accent); 
-    font-size: var(--fs-subheading); 
-    font-weight: var(--fw-heavy); 
-}
-
 .status-application-pending { --status-accent: #EEBF04; border-right: 1px solid lightgray; }
 .status-signature-pending { --status-accent: #E342FF; border-right: 1px solid lightgray; }
-.status-application-received { --status-accent: #0B9BCF; border-right: 1px solid lightgray; }
+.status-application-received { --status-accent: #0B9BCF; }
 .status-in-underwriting { --status-accent: #5BC980; border-right: 1px solid lightgray; }
 .status-account-pending { --status-accent: #DA2637; }
 
@@ -79,7 +117,6 @@
 
 .sponsor-paysafe { border: none !important; }
 
-.sponsors-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
 .sponsors-icon-img { height: 40px; width: 40px; }
 
 .sponsors-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
@@ -89,8 +126,9 @@
 }
 
 
-/* --- .main-approved, Approved Category Merchant Counts  --- */
-.main-approved {
+
+/* --- .main-warning, Approved Category Merchant Counts  --- */
+.main-warning {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     gap: 30px;
@@ -100,22 +138,27 @@
     flex-direction: column;
 }
 
-.approved-container {
+.warning-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+.warning-table {
     display: flex;
+    flex-direction: column;
 }
 
-.approved {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-    flex: 1;
-    gap: 15px;
- }
+.warning-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--primary-blue);
+}
 
-.approved-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+.warning-row > :first-child { justify-self: start; }
+.warning-row > :last-child { justify-self: end; }
 
-.status-approved { --status-accent: #0B9BCF; border-right: 1px solid lightgray; }
-.status-active { --status-accent: #5BC980; border-right: 1px solid lightgray; }
-.status-inactive { --status-accent: #EEBF04; border-right: 1px solid lightgray; }
-.status-cold { --status-accent: #DA2637; }
+.warning-row:last-child { border-bottom: none }
+.warning-merchant { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.warning-status { font-size: var(--fs-text); font-weight: var(--fw-medium); }
+.warning-since { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.warning-email { font-size: var(--fs-text); font-weight: var(--fw-light); }
