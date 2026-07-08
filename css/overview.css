@@ -266,35 +266,42 @@
 
 /* -- .main-merchants, funnel and counts(?) */
 .main-merchants {
-    grid-row: 7 / -1;
+    grid-row: 6 / -1;
     grid-column: 1 / -1;
-    padding: 30px;
+    gap: 30px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .merchants-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
 
-
-.merchants-status {
+.merchants-content {
     display: flex;
-    flex: 1;
-    gap: 40px;
+    flex-direction: row;
 }
 
-.status-label { color: var(--primary-white); font-size: var(--fs-text); font-weight: var(--fw-light); }
-.status-value { color: var(--primary-white); font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
-
-.status {
-    padding: 15px;
-    background-color: var(--primary-lightblue);
-    border-radius: 10px;
-
-    flex: 1;
+.merchants {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    text-align: left;
+    flex: 1;
+    gap: 15px;
+ }
+
+.merchants-icon-img { height: 40px; width: 40px; }
+
+.merchants-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
+.merchants-value { 
+    color: var(--merchants-accent); 
+    font-size: var(--fs-subheading); 
+    font-weight: var(--fw-heavy); 
 }
+
+.merchants-leads { --merchants-accent: var(--red); border-right: 1px solid lightgray; }
+.merchants-qualified { --merchants-accent: var(--yellow); border-right: 1px solid lightgray; }
+.merchants-underwriting { --merchants-accent: var(--pink); border-right: 1px solid lightgray; }
+.merchants-approved { --merchants-accent: var(--blue); border-right: 1px solid lightgray; }
+.merchants-processing { --merchants-accent: var(--green); }
