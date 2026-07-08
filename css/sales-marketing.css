@@ -6,11 +6,38 @@
     width: auto;
 
     display: grid;
-    grid-template: auto auto 1fr / repeat(6, 1fr);
+    grid-template: auto auto auto 1fr / repeat(6, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
 
+.inside-title,
+.outside-title,
+.marketing-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
 
 
-/* --- next item here --- */
+
+/* --- .main-marketing, marketing stats --- */
+.main-marketing {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    padding: 30px;
+}
+
+
+
+/* --- .main-inside, inside sales rep stats --- */
+.main-inside {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    padding: 30px;
+}
+
+
+
+/* --- .main-outside, outside sales rep stats --- */
+.main-outside {
+    grid-row: 3 / 4;
+    grid-column: 4 / -1;
+    padding: 30px;
+}
