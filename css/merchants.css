@@ -6,7 +6,7 @@
     width: auto;
 
     display: grid;
-    grid-template: auto auto auto 1fr / repeat(6, 1fr);
+    grid-template: auto auto auto auto 1fr / repeat(6, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -15,7 +15,7 @@
 /* --- .main-underwriting, In Underwriting Category Merchant Counts  --- */
 .main-underwriting {
     grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     gap: 30px;
     padding: 30px;
 
@@ -56,7 +56,7 @@
 /* --- .main-sponsors, Sponsor Bank Counts --- */
 .main-sponsors {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     gap: 30px;
     padding: 30px;
 
@@ -92,7 +92,7 @@
 /* --- .main-approved, Approved Category Merchant Counts  --- */
 .main-approved {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     gap: 30px;
     padding: 30px;
 

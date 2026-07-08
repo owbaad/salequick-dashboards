@@ -10,6 +10,7 @@ async function inject(id, url) {
 (async function build() {
   await inject('site-header', 'partials/header.html');
   await inject('site-nav', 'partials/nav.html');
+  await inject('main-selector', 'partials/selector.html');
 
   const pageTitle = document.body.dataset.title;
 

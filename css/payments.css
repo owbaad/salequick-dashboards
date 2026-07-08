@@ -6,7 +6,7 @@
     width: auto;
 
     display: grid;
-    grid-template: auto auto auto 1fr / repeat(6, 1fr);
+    grid-template: auto auto 1fr / repeat(6, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -16,6 +16,7 @@
 /* --- .main-primary, KPIs  --- */
 .main-transactions {
     grid-column: 1 / -1;
+    grid-row: 2 / 3;
     gap: 0;
     padding: 30px;
 

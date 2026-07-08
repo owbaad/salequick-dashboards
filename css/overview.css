@@ -6,7 +6,7 @@
     width: auto;
 
     display: grid;
-    grid-template: auto repeat(3, 2fr) / repeat(5, 1fr);
+    grid-template: auto auto repeat(3, 2fr) / repeat(5, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -14,6 +14,7 @@
 
 /* --- .main-primary, KPIs  --- */
 .main-kpi {
+    grid-row: 2 / 3;
     grid-column: 1 / -1;
     gap: 0;
     padding: 30px;
@@ -49,8 +50,8 @@
 
 /* --- .main-goal, volume progress bar --- */
 .main-goal {
+    grid-row: 3 / 4;
     grid-column: 1 / 4;
-    grid-row: 2 / 3;
     padding: 30px;
 
     display: flex;
@@ -112,8 +113,8 @@
 
 /* -- .main-volume, graph for daily volume -- */
 .main-volume {
+    grid-row: 4 / 5;
     grid-column: 1 / 4;
-    grid-row: 3 / 4;
     padding: 30px;
 
     display: flex;
@@ -185,8 +186,8 @@
 
 /* -- .main-transactions, counts of payment status */
 .main-transactions {
+    grid-row: 3 / 4;
     grid-column: 4 / 6;
-    grid-row: 2 / 3;
     padding: 30px;
 
     display: flex;
@@ -216,8 +217,8 @@
 
 /* -- .main-sources, graph by payment source */
 .main-sources { 
+    grid-row: 4 / 5;
     grid-column: 4 / 6;
-    grid-row: 3 / 4;
     padding: 30px;
 
     display: flex;
@@ -265,8 +266,8 @@
 
 /* -- .main-merchants, funnel and counts(?) */
 .main-merchants {
+    grid-row: 7 / -1;
     grid-column: 1 / -1;
-    grid-row: 4 / -1;
     padding: 30px;
 
     display: flex;
