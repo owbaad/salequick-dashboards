@@ -6,7 +6,7 @@
     width: auto;
 
     display: grid;
-    grid-template: auto auto auto 1fr / repeat(6, 1fr);
+    grid-template: auto auto auto auto 1fr / repeat(6, 1fr);
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -160,3 +160,14 @@
 .other-label { font-size: var(--fs-text); font-weight: var(--fw-light); }
 .other-count { font-size: var(--fs-text); font-weight: var(--fw-light); }
 .other-value { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
+
+
+
+/* --- .main-topmchnts, Best Merchants by Volume  --- */
+.main-topmerchants {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    padding: 30px;
+}
+
+.topmerchants-title { font-size: var(--fs-subheading); font-weight: var(--fw-medium); }
