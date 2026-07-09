@@ -20,16 +20,16 @@
         <!-- Main Content -->
         <main class="main">
 
-            <!-- Standard, Date Range selector. Default is month-to-date -->
-            <!-- All datapoints fall back to this range UNLESS SPECIFICALLY MARKED OTHERWISE -->
+            <!-- Date range selector, export button (to .pdf) and last updated element -->
+            <!-- Default date range is month-to-date. Allow for all normal options in SQ system though -->
             <div class="main-selector" id="main-selector"></div>
             
 
-            <!-- Approved Category Counts -->
+            <!-- Approved Category Counts, ALL TIME, NOT MONTH-TO-DATE -->
             <div class="main-approved card">
 
                 <div class="approved-top">
-                    <!-- Approved Count -->
+                    <!-- Approved Status Count -->
                     <div class="approved status-approved">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <!-- Active Count -->
+                    <!-- Active Status Count -->
                     <div class="approved status-active">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
@@ -53,7 +53,7 @@
                 </div> <!-- Close top-container -->
 
                 <div class="approved-bottom">
-                    <!-- Inactive Count -->
+                    <!-- Inactive Status Count -->
                     <div class="approved status-inactive">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <!-- Cold Count -->
+                    <!-- Cold Status Count -->
                     <div class="approved status-cold">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
@@ -82,7 +82,7 @@
             <div class="main-underwriting card">
 
                 <div class="underwriting-top">
-                    <!-- Application Pending Count -->
+                    <!-- Application Pending Status Count -->
                     <div class="underwriting status-application-pending">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
 
-                    <!-- Signature Pending Count -->
+                    <!-- Signature Pending Status Count -->
                     <div class="underwriting status-signature-pending">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/pending.png" alt="">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <!-- Application Received Count -->
+                    <!-- Application Received Status Count -->
                     <div class="underwriting status-application-received">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/completed.png" alt="">
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="underwriting-bottom">
-                    <!-- In Underwriting Count -->
+                    <!-- In Underwriting Status Count -->
                     <div class="underwriting status-in-underwriting">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/approved.png" alt="">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <!-- Account Pending Count -->
+                    <!-- Account Pending Status Count -->
                     <div class="underwriting status-account-pending">
                         <div class="status-icon">
                             <img class="status-icon-img" src="images/main-transaction/failed.png" alt="">
@@ -147,7 +147,7 @@
             <div class="main-sponsors card">
 
                 <div class="sponsors-container">
-                    <!-- TSYS Count -->
+                    <!-- TSYS Sponsor Bank Count -->
                     <div class="sponsors sponsor-tsys">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 
-                    <!-- Payroc Count -->
+                    <!-- Payroc Sponsor Bank Count -->
                     <div class="sponsors sponsor-payroc">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
 
-                    <!-- Woodforest Count -->
+                    <!-- Woodforest Sponsor Bank Count -->
                     <div class="sponsors sponsor-woodforest">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
 
-                    <!-- SkyTab Count -->
+                    <!-- SkyTab Sponsor Bank Count -->
                     <div class="sponsors sponsor-skytab">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
 
-                    <!-- BetterPay Count -->
+                    <!-- BetterPay Sponsor Bank Count -->
                     <div class="sponsors sponsor-betterpay">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -202,7 +202,7 @@
                         </div>
                     </div>
 
-                    <!-- Paysafe Count -->
+                    <!-- Paysafe Sponsor Bank Count -->
                     <div class="sponsors sponsor-paysafe">
                         <div class="sponsors-icon">
                             <img class="sponsors-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -216,6 +216,7 @@
             </div> <!-- Close main-sponsors  -->
 
 
+            <!-- Warning Table; Tracks merchants that go inactive or cold so Admins can contact them  -->
             <div class="main-warning card">
                 <h1 class="warning-title">Merchant Inactivity</h1>
 

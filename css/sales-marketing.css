@@ -37,7 +37,7 @@
 
 /* --- .main-outside, outside sales rep stats --- */
 .main-outside {
-    grid-row: 3 / 4;
+    grid-row: 3 / -1;
     grid-column: 4 / -1;
     padding: 30px;
 }

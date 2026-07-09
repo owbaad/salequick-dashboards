@@ -21,15 +21,15 @@
         <!-- Main Content -->
         <main class="main">
 
-            <!-- Standard, Date Range selector. Default is month-to-date -->
-            <!-- All datapoints fall back to this range UNLESS SPECIFICALLY MARKED OTHERWISE -->
+            <!-- Date range selector, export button (to .pdf) and last updated element -->
+            <!-- Default date range is month-to-date. Allow for all normal options in SQ system though -->
             <div class="main-selector" id="main-selector"></div>
 
 
-            <!-- Primary KPIs; This data should be in the SQ database already -->
+            <!-- Primary KPIs; This data should be in the SQ database already for the most part -->
              <div class="main-kpi card">
 
-                <!-- Total Volume; Self-Explanatory -->
+                <!-- Total Processing Volume; Self-Explanatory -->
                 <div class="kpi kpi-volume">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <!-- Total Revenue; this is FEES charged -->
+                <!-- Total Revenue; this is FEES charged on volume not actual profit -->
                 <div class="kpi kpi-revenue">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/revenue.png" alt="">
@@ -52,7 +52,7 @@
                 </div>
 
                 <!-- Merchant Count; Not any specific status just a total of all merchants -->
-                <!-- This is NOT affected by the active date filter. It will always be current merchant count. -->
+                <!-- This is NOT AFFECTED by the active date range. It will always be current total merchant count. -->
                 <div class="kpi kpi-merchants">
                     <div class="kpi-icon">
                         <img class="kpi-icon-img" src="images/main-processing/group.png" alt="">
@@ -88,7 +88,9 @@
 
 
 
-            <!-- Volume Progress Bar; this is Current Volume vs. the Monthly Goal for Volume -->
+            <!-- Volume Progress Bar; this is Current Volume vs. the Monthly Goal for Volume.. -->
+            <!-- This will be based on a dashboard management screen, I'm working on this. Admins 
+            (likely Darla) will input the goal for the month and it will track based on that. -->
             <div class="main-goal card">
                 <div class="goal-header">
                     <h1 class="goal-title">Volume Goal Progress</h1>
@@ -109,13 +111,13 @@
                         <h1 class="stats-value">$474.58K</h1>
                     </div>
 
-                    <!-- Projected Volume at End; Based on the Average Volume per Day -->
+                    <!-- Projected Volume at End of Date Range; Based on the Average Volume per Day -->
                     <div class="stats-projected">
                         <h2 class="stats-label">Projected at End</h2>
                         <h1 class="stats-value">$14.57M</h1>
                     </div>
                     
-                    <!-- Percantage Projected; What % of goal we're expected to reach out of the goal  -->
+                    <!-- Percantage Projected; What % of goal we're expected to reach out of the goal based on average per day  -->
                     <div class="stats-comparison">
                         <h2 class="stats-label">Projected vs. Goal</h2>
                         <h1 class="stats-value">89.0% - Behind</h1>
@@ -189,12 +191,13 @@
 
             
             <!-- Merchants; Month-to-Date metrics, NOT all-time totals -->
+            <!-- Need to read the API reference to figure how this segment will work -->
              <div class="main-merchants card">
                 <h1 class="merchants-title">Merchant Analytics</h1>
 
                 <div class="merchants-content">
 
-                    <!-- Leads Total; from Zoho -->
+                    <!-- Leads Total; from Zoho (CRM) API -->
                     <div class="merchants merchants-leads">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -205,7 +208,7 @@
                         </div>
                     </div>
 
-                    <!-- Qualified Leads Total; from Zoho -->
+                    <!-- Qualified Leads Total; from Zoho (CRM) API -->
                     <div class="merchants merchants-qualified">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -228,7 +231,7 @@
                         </div>
                     </div>
 
-                    <!-- Approved Merchants (MTD) (Not Inactive or Cold) -->
+                    <!-- Total Approved Merchants -->
                     <div class="merchants merchants-approved">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
@@ -239,7 +242,7 @@
                         </div>
                     </div>
 
-                    <!-- Total Merchants Active or Cold -->
+                    <!-- Total Merchants Active, Inactive, or Cold (different from Approved) -->
                     <div class="merchants merchants-processing">
                         <div class="merchants-icon">
                             <img class="merchants-icon-img" src="images/main-processing/save-money.png" alt="">
