@@ -3,10 +3,11 @@
     grid-column: 2 / 3;
     overflow-y: auto;
     min-height: 0;
-    width: auto;
 
     display: grid;
-    grid-template: auto auto auto auto auto 1fr / repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: start;
     gap: 15px;
     padding-bottom: 30px;
 }
@@ -130,7 +131,7 @@
 /* --- .main-warning, Approved Category Merchant Counts  --- */
 .main-warning {
     grid-column: 1 / -1;
-    grid-row: 4 / -1;
+    grid-row: 4 / 5;
     gap: 30px;
     padding: 30px;
 

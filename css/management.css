@@ -3,10 +3,11 @@
     grid-column: 2 / 3;
     overflow-y: auto;
     min-height: 0;
-    width: auto;
 
     display: grid;
-    grid-template: auto auto auto auto 1fr / repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: start;
     gap: 15px;
     padding-bottom: 30px;
 }
